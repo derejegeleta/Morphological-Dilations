@@ -1,7 +1,9 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#ifdef _OPENMP
 #include <omp.h>
+#endif 
 
 // Perform morphological dilation on a collection of binary images
 // Each image is a 2D vector<int> with values 0 or 1
